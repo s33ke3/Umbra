@@ -42,24 +42,6 @@ The assessment workflow includes targeted local checks, environment settings, re
 
 Git history is outside the supported credential-discovery scope. A finding that identifies a protected or encrypted artifact does not mean its contents have been decrypted or that authentication has been tested.
 
-## Download and verify
-
-Use the script and checksum file from the same published release. For this version, the script is named `Umbra_v4.2.4.ps1`.
-
-Calculate its SHA-256 hash in Windows PowerShell:
-
-```powershell
-Get-FileHash -LiteralPath '.\Umbra_v4.2.4.ps1' -Algorithm SHA256
-```
-
-For the **public1** publication revision, the expected value is:
-
-```text
-0E28FB29B3FA942423E1E6AA7EFF684D1BEE3E8AB6EF21D66772C26F6D311B14
-```
-
-Compare it with the entry for the script in `SHA256SUMS.txt`. A matching checksum confirms consistency with the published manifest; it is not an independent guarantee of safety or authenticity.
-
 **Read the parameter notes at the top of the script and its `param` block before use.** The inherited header retains an older `-candidate.ps1` filename in its examples; the distributed filename is `Umbra_v4.2.4.ps1`. `Get-Help` can show parameter syntax, but this version does not provide a complete comment-based help manual.
 
 Start in a controlled environment with synthetic data, an explicitly authorized scope and an agreed approach to handling findings.
