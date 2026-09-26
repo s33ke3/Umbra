@@ -1,0 +1,11 @@
+# Default-deny selection for the initial public repository.
+# This is a staging aid, not a content scanner or a history-cleaning tool.
+# Browser uploads and force-add operations require separate review.
+*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/SECURITY.md
+!/LICENSE
+!/SHA256SUMS.txt
+!/Umbra_v4.2.4.ps1

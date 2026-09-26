@@ -1,0 +1,2 @@
+# Preserve reviewed file bytes; do not normalize line endings automatically.
+* -text
