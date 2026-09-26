@@ -8,7 +8,7 @@
 
 **Windows PowerShell 5.1 · Single file · Offline-first**
 
-[Why Umbra?](#why-umbra) · [Scope](#know-the-scope) · [Verify the download](#download-and-verify) · [Security policy](SECURITY.md)
+[Why Umbra?](#why-umbra) · [Scope](#know-the-scope) · [Download](https://github.com/s33ke3/Umbra/releases/tag/v4.2.4-public1) · [Security policy](SECURITY.md)
 
 </div>
 
@@ -34,7 +34,7 @@ The goal is practical: make exposed secrets easier to find, investigate and reme
 
 ## Know the scope
 
-This repository contains **Umbra for Windows**, version **4.2.4**, publication revision **public1**. The runtime version remains `4.2.4` and the script filename remains `Umbra_v4.2.4.ps1`; the publication revision is identified by the checksum below. The script requires **Windows PowerShell 5.1, Desktop edition**. It is not a PowerShell 7 or Linux release.
+This repository contains **Umbra for Windows**, version **4.2.4**, publication revision **public1**. The runtime version remains `4.2.4` and the script filename remains `Umbra_v4.2.4.ps1`. The script requires **Windows PowerShell 5.1, Desktop edition**. It is not a PowerShell 7 or Linux release.
 
 The assessment workflow includes targeted local checks, environment settings, registry checks and, depending on the selected mode, a broader filesystem phase. Actual coverage depends on the options, account permissions and artifacts present on the host.
 
